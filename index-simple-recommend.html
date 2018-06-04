@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="ch">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Webstack.cc" />
+    <meta name="author" content="viggoz.com" />
+    <title>Webstack.cc - Admin</title>
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Arimo:400,700,400italic">
+    <link rel="stylesheet" href="assets/css/fonts/linecons/css/linecons.css">
+    <link rel="stylesheet" href="assets/css/fonts/fontawesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/css/xenon-core.css">
+    <link rel="stylesheet" href="assets/css/xenon-forms.css">
+    <link rel="stylesheet" href="assets/css/xenon-components.css">
+    <link rel="stylesheet" href="assets/css/xenon-skins.css">
+    <link rel="stylesheet" href="assets/css/custom.css">
+    <script src="assets/js/jquery-1.11.1.min.js"></script>
+
+</head>
+
+<body class="page-body">
+    <div class="page-container">
+        <div class="sidebar-menu toggle-others fixed">
+            <div class="sidebar-menu-inner">
+                <header class="logo-env">
+                    <!-- logo -->
+                    <div class="logo">
+                        <a href="dashboard-1.html" class="logo-expanded">
+                            <img src="assets/images/logo@2x.png" width="80" alt="" />
+                        </a>
+                        <a href="dashboard-1.html" class="logo-collapsed">
+                            <img src="assets/images/logo-collapsed@2x.png" width="40" alt="" />
+                        </a>
+                    </div>
+                    <!-- This will toggle the mobile menu and will be visible only on mobile devices -->
+                    <div class="mobile-menu-toggle visible-xs">
+                        <a href="#" data-toggle="mobile-menu">
+                            <i class="fa-bars"></i>
+                        </a>
+                    </div>
+                </header>
+                <ul id="main-menu" class="main-menu">
+                    <!-- add class "multiple-expanded" to allow multiple submenus to open -->
+                    <!-- class "auto-inherit-active-class" will automatically add "active" class for parent elements who are marked already with class "active" -->
+                    <li class="has-sub">
+                        <a href="#">
+                            <i class="linecons-cog"></i>
+                            <span class="title">后台数据</span>
+                        </a>
+                    </li>
+                    <li class="has-sub">
+                        <a href="index-simple.html">
+                            <i class="linecons-beaker"></i>
+                            <span class="title">网站管理</span>
+                        </a>
+                    </li>
+                    <li class="has-sub active">
+                        <a href="index-simple-recommend.html">
+                            <i class="linecons-beaker"></i>
+                            <span class="title">用户推荐</span>
+                            <span class="badge badge-green">2</span>
+                        </a>
+                    </li>
+                    <!-- <li class="has-sub">
+                        <a href="#.html">
+                            <i class="linecons-desktop"></i>
+                            <span class="title">用户反馈</span>
+                            <span class="badge badge-green">7</span>
+                        </a>
+                    </li>
+                    <li class="has-sub">
+                        <a href="#.html">
+                            <i class="linecons-note"></i>
+                            <span class="title">友情链接</span>
+                        </a>
+                    </li> -->
+                </ul>
+            </div>
+        </div>
+        <div class="main-content">
+            <nav class="navbar user-info-navbar" role="navigation">
+                <!-- User Info, Notifications and Menu Bar -->
+                <!-- Left links for user info navbar -->
+                <ul class="user-info-menu left-links list-inline list-unstyled">
+                    <li class="hidden-sm hidden-xs">
+                        <a href="#" data-toggle="sidebar">
+                            <i class="fa-bars"></i>
+                        </a>
+                    </li>
+                </ul>
+                <!-- Right links for user info navbar -->
+                <ul class="user-info-menu right-links list-inline list-unstyled">
+                    <li class="dropdown user-profile">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                            <img src="assets/images/user-4.png" alt="user-image" class="img-circle img-inline userpic-32" width="28" />
+                            <span>
+                                超级管理员
+                                <i class="fa-angle-down"></i>
+                            </span>
+                        </a>
+                        <ul class="dropdown-menu user-profile-menu list-unstyled">
+                            <li>
+                                <a href="#settings">
+                                    <i class="fa-wrench"></i> 设置
+                                </a>
+                            </li>
+                            <li class="last">
+                                <a href="extra-lockscreen.html">
+                                    <i class="fa-lock"></i> 注销
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <div class="page-title">
+                <div class="title-env">
+                    <h1 class="title">用户推荐</h1>
+                    <p class="description">所有用户提交的推荐网站信息列表</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">推荐列表</h3>
+                        <div class="panel-options">
+                            <a href="#">
+                                <i class="linecons-cog"></i>
+                            </a>
+                            <a href="#" data-toggle="panel">
+                                <span class="collapse-icon">–</span>
+                                <span class="expand-icon">+</span>
+                            </a>
+                            <a href="#" data-toggle="reload">
+                                <i class="fa-rotate-right"></i>
+                            </a>
+                            <a href="#" data-toggle="remove">
+                                ×
+                            </a>
+                        </div>
+                    </div>
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>名称</th>
+                                <th>简介</th>
+                                <th>链接</th>
+                                <th>推荐人联系方式</th>
+                                <th>操作</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>01</td>
+                                <td>Adobe Photoshop</td>
+                                <td>Adobe公司开发的图像合成软件Adobe公司开发的图像合成软件Adobe公司开发的图像合成软件Adobe公司开发的图像合成软件...</td>
+                                <td>www.photoshop.com</td>
+                                <td>272910299@qq.com</td>
+                                <td class="action-links">
+                                    <a href="javascript:;" onclick="jQuery('#modal-6').modal('show', {backdrop: 'static'});" class="edit"><i class="linecons-pencil"></i>添加</a>
+                                    <a href="javascript:;" onclick="jQuery('#modal-1').modal('show', {backdrop: 'static'});" class="delete"><i class="linecons-trash"></i>删除</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>01</td>
+                                <td>Adobe Photoshop</td>
+                                <td>Adobe公司开发的图像合成软件Adobe公司开发的图像合成软件Adobe公司开发的图像合成软件Adobe公司开发的图像合成软件...</td>
+                                <td>www.photoshop.com</td>
+                                <td>272910299@qq.com</td>
+                                <td class="action-links">
+                                    <a href="javascript:;" onclick="jQuery('#modal-6').modal('show', {backdrop: 'static'});" class="edit"><i class="linecons-pencil"></i>添加</a>
+                                    <a href="javascript:;" onclick="jQuery('#modal-1').modal('show', {backdrop: 'static'});" class="delete"><i class="linecons-trash"></i>删除</a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    </br>
+                    <div class="row">
+                        <div class="col-sm-12 text-right text-center-sm">
+                            <ul class="pagination pagination-sm no-margin">
+                                <li>
+                                    <a href="#">
+                                        <i class="fa-angle-left"></i>
+                                    </a>
+                                </li>
+                                <li class="active">
+                                    <a href="#">1</a>
+                                </li>
+                                <li>
+                                    <a href="#">2</a>
+                                </li>
+                                <li>
+                                    <a href="#">3</a>
+                                </li>
+                                <li class="disabled">
+                                    <a href="#">4</a>
+                                </li>
+                                <li>
+                                    <a href="#">5</a>
+                                </li>
+                                <li>
+                                    <a href="#">6</a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa-angle-right"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Main Footer -->
+            <!-- Choose between footer styles: "footer-type-1" or "footer-type-2" -->
+            <!-- Add class "sticky" to  always stick the footer to the end of page (if page contents is small) -->
+            <!-- Or class "fixed" to  always fix the footer to the end of page -->
+            <footer class="main-footer fixed footer-type-1">
+                <div class="footer-inner">
+                    <!-- Add your copyright text here -->
+                    <div class="footer-text">
+                        Copyright &copy; <strong> 2017</strong> Crafted by <a href="http://viggoz.com"><strong> viggo</strong></a>
+                    </div>
+                    <!-- Go to Top Link, just add rel="go-top" to any link to add this functionality -->
+                    <div class="go-up">
+                        <a href="#" rel="go-top">
+                            <i class="fa-angle-up"></i>
+                        </a>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+    <!-- Modal 1 (Basic)-->
+    <div class="modal fade" id="modal-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title">删除网站</h4>
+                </div>
+                <div class="modal-body">
+                    确定要删除这个网址吗!
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-white" data-dismiss="modal">取消</button>
+                    <button type="button" class="btn btn-info">确定</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal 6 (Long Modal)-->
+    <div class="modal fade" id="modal-6">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title">编辑网站</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <script type="text/javascript">
+                        jQuery(document).ready(function($) {
+                            var i = 1,
+                                $example_dropzone_filetable = $("#example-dropzone-filetable"),
+                                example_dropzone = $("#advancedDropzone").dropzone({
+                                    url: 'data/upload-file.php',
+
+                                    // Events
+                                    addedfile: function(file) {
+                                        if (i == 1) {
+                                            $example_dropzone_filetable.find('tbody').html('');
+                                        }
+
+                                        var size = parseInt(file.size / 1024, 10);
+                                        size = size < 1024 ? (size + " KB") : (parseInt(size / 1024, 10) + " MB");
+
+                                        var $entry = $('<tr>\
+                                                    <td class="text-center">' + (i++) + '</td>\
+                                                    <td>' + file.name + '</td>\
+                                                    <td><div class="progress progress-striped"><div class="progress-bar progress-bar-warning"></div></div></td>\
+                                                    <td>' + size + '</td>\
+                                                    <td>Uploading...</td>\
+                                                </tr>');
+
+                                        $example_dropzone_filetable.find('tbody').append($entry);
+                                        file.fileEntryTd = $entry;
+                                        file.progressBar = $entry.find('.progress-bar');
+                                    },
+
+                                    uploadprogress: function(file, progress, bytesSent) {
+                                        file.progressBar.width(progress + '%');
+                                    },
+
+                                    success: function(file) {
+                                        file.fileEntryTd.find('td:last').html('<span class="text-success">Uploaded</span>');
+                                        file.progressBar.removeClass('progress-bar-warning').addClass('progress-bar-success');
+                                    },
+
+                                    error: function(file) {
+                                        file.fileEntryTd.find('td:last').html('<span class="text-danger">Failed</span>');
+                                        file.progressBar.removeClass('progress-bar-warning').addClass('progress-bar-red');
+                                    }
+                                });
+
+                            $("#advancedDropzone").css({
+                                minHeight: 200
+                            });
+
+                        });
+                        </script>
+                        <div class="col-md-12">
+                            <div class="col-sm-4 text-center">
+                                <div id="advancedDropzone" class="droppable-area">
+                                    选择图片
+                                </div>
+                            </div>
+                            <div class="col-sm-8">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <label for="field-3" class="control-label">名称</label>
+                                            <input type="text" class="form-control" id="field-3" placeholder="网站名称">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="form-group no-margin">
+                                            <label for="field-7" class="control-label">简介</label>
+                                            <textarea class="form-control autogrow" id="field-7" placeholder="对此标签页的简介文字"></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <label for="field-3" class="control-label">网址</label>
+                                <input type="text" class="form-control" id="field-3" placeholder="Https://">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <label for="field-3" class="control-label">一级分类</label>
+                            </br>
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-white">写死</button>
+                                <button type="button" class="btn btn-white dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                                    <i class="caret"></i>
+                                </button>
+                                <ul class="dropdown-menu" role="menu">
+                                    <li>
+                                        <a href="#">设计师</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">产品经理</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">产品运营</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">前端开发</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">后端开发</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">互联网</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <label for="field-3" class="control-label">二级分类</label>
+                            </br>
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-white">设计工具</button>
+                                <button type="button" class="btn btn-white dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                                    <i class="caret"></i>
+                                </button>
+                                <ul class="dropdown-menu" role="menu">
+                                    <li>
+                                        <a href="#">灵感收集</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">设计素材</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">icon下载</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">高清图库</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label for="field-3" class="control-label">添加二级分类</label>
+                                <input type="text" class="form-control" id="field-3" placeholder="分类名称">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-white" data-dismiss="modal">取消</button>
+                    <button type="button" class="btn btn-info">保存</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Imported styles on this page -->
+    <link rel="stylesheet" href="assets/js/dropzone/css/dropzone.css">
+    <!-- Imported scripts on this page -->
+    <script src="assets/js/dropzone/dropzone.min.js"></script>
+    <!-- Bottom Scripts -->
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/TweenMax.min.js"></script>
+    <script src="assets/js/resizeable.js"></script>
+    <script src="assets/js/joinable.js"></script>
+    <script src="assets/js/xenon-api.js"></script>
+    <script src="assets/js/xenon-toggles.js"></script>
+    <!-- JavaScripts initializations and stuff -->
+    <script src="assets/js/xenon-custom.js"></script>
+</body>
+
+</html>
