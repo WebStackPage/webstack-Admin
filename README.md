@@ -19,10 +19,17 @@ Docker部署版本:https://hub.docker.com/r/arvon2014/webstack-laravel
 #### 方法4. 基于Java开发的后台系统🔥(感谢[@jsnjfz](https://github.com/jsnjfz)提供)
 开源地址：https://github.com/jsnjfz/WebStack-Guns
 
-#### 方法5. 使用Typecho主题🔥(感谢[@SEOGO](https://www.seogo.me/)提供)
+#### 方法5. springboot后台 Nikati-WebStack-Guns ❤️ (感谢[Nikati \(Nikati\)](https://github.com/Nikati)提供)
+开源地址：https://github.com/Nikati/WebStack-Guns-NKT
+
+#### 方法6. 使用 Jekyll 版本的后台🔥(感谢[@0xl2oot](https://github.com/0xl2oot)提供)
+开源地址：[https://github.com/0xl2oot/webstack-jekyll](https://github.com/0xl2oot/webstack-jekyll)
+
+#### 方法7. 使用Typecho主题🔥(感谢[@SEOGO](https://www.seogo.me/)提供)
 开源地址：[https://www.seogo.me/muban/webstack.html](https://www.seogo.me/muban/webstack.html)
 
-### webstack.cc后台静态源码
+#### 方法8. 自己写后台系统
+可以按照自己的喜好和框架搭建后台系统，也可以参考我设计好的后台框架自行搭建。本站设计开发过程在我的博客文章有详细讲到[《webstack \| viggo》](http://blog.viggoz.com/2018/01/03/2018-01-03-webstack/)。静态源码（半成品）：[https://github.com/WebStackPage/webstack-Admin](https://github.com/WebStackPage/webstack-Admin)
 
 后台静态Demo：[www.webstack.cc/webstack-Admin/](http://webstack.cc/webstack-Admin/)
 
