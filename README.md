@@ -2,9 +2,9 @@
 
 此后台未完成，请移步主项目查看使用方法
 
-👇🏻
+静态响应式网址导航网站👇🏻
 
-[https://github.com/WebStackPage/WebStackPage.github.io - 静态响应式网址导航网站](https://github.com/WebStackPage/WebStackPage.github.io)
+[https://github.com/WebStackPage/WebStackPage.github.io](https://github.com/WebStackPage/WebStackPage.github.io)
 ---
 
 后台静态Demo：[www.webstack.cc/webstack-Admin/](http://webstack.cc/webstack-Admin/)
