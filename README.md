@@ -1,6 +1,8 @@
 本项目这是一个**纯静态**的网址导航网站，内容均由[viggo](http://viggoz.com)收集并整理。项目基于bootstrap前端框架开发。
 
-此后台未完成，请移步主项目查看使用方法 [WebStackPage/WebStackPage\.github\.io: ❤️静态响应式网址导航网站 \- webstack\.cc](https://github.com/WebStackPage/WebStackPage.github.io)
+此后台未完成，请移步主项目查看使用方法
+👇🏻
+[WebStackPage/WebStackPage\.github\.io: ❤️静态响应式网址导航网站 \- webstack\.cc](https://github.com/WebStackPage/WebStackPage.github.io)
 ---
 
 后台静态Demo：[www.webstack.cc/webstack-Admin/](http://webstack.cc/webstack-Admin/)
