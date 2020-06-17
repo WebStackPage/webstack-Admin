@@ -7,13 +7,12 @@
 [https://github.com/WebStackPage/WebStackPage.github.io](https://github.com/WebStackPage/WebStackPage.github.io)
 ---
 
-后台静态Demo：[www.webstack.cc/webstack-Admin/](http://webstack.cc/webstack-Admin/)
-
 - 没有绑定任何后台语言
 - 基于bootstrap主题 **Xenon**
 - index.html (完整功能后台模板)
 - simple.html (阉割版后台模板)
 - index-simple-recommend.html (用户推荐管理模板)
+后台静态Demo：http://webstack.cc/webstack-Admin/
 
 ![](http://7xnb6x.com1.z0.glb.clouddn.com/webstack-06-production2.png)
 ![](http://7xnb6x.com1.z0.glb.clouddn.com/webstack-08-design2.png)
